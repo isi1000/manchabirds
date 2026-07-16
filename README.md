@@ -50,8 +50,6 @@ ib.paleta("abejaruco_seq", n = 9) # just the hex codes
 My favorite for scientific work is `martin` (kingfisher) — orange and blue, plays
 nice, colorblind-friendly. But use whichever bird you like.
 
-MIT license, do what you want with it.
-
 ---
 
 ## The palettes

@@ -13,7 +13,7 @@ Description: Sistema de 11 paletas de colores (10 aves ibericas y el paisaje
     un paquete gemelo en Python con paridad exacta.
 Depends: R (>= 3.5.0)
 Imports: ggplot2, grDevices, graphics
-License: MIT + file LICENSE
+License: All rights reserved
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
