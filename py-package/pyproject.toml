@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iberianbirds"
+version = "0.1.0"
+description = "Paletas de colores inspiradas en aves ibericas para figuras cohesivas (matplotlib/seaborn). Gemela del paquete R iberianbirds."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Isidro Sobrino", email = "isidrosobrino@gmail.com" }]
+keywords = ["colormap", "palette", "matplotlib", "seaborn", "ggplot2", "aves", "birds"]
+dependencies = ["matplotlib>=3.4"]
+
+[project.optional-dependencies]
+seaborn = ["seaborn>=0.11"]
+
+[project.urls]
+Homepage = "https://github.com/isidrosobrino/iberianbirds"
+
+[tool.setuptools.packages.find]
+where = ["src"]

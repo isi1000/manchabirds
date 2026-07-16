@@ -1,0 +1,38 @@
+# --- Fotos de terceros (COPYRIGHT) — NO publicar ---
+shared/paletas.png
+shared/paletas-referencia-original.png
+shared/Captura de pantalla*.png
+shared/aves/_swatches-*.png
+_archive/
+
+# --- Scratch / temporales ---
+shared/_tmp/
+_rtest.R
+*.tmp
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# --- R ---
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# --- SO / OneDrive ---
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Config local de Claude Code
+.claude/
+
+# scripts temporales sueltos
+shared/_*.R

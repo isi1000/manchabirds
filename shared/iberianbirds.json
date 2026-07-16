@@ -1,0 +1,54 @@
+{
+  "name": "iberianbirds",
+  "description": "Paletas de colores inspiradas en aves ibéricas para gráficos científicos cohesivos en R y Python.",
+  "version": "0.1.0",
+  "colors": {
+    "anil":              "#274CCE",
+    "trigo":             "#F1C447",
+    "colorao":           "#CC0300",
+    "forja":             "#465661",
+    "encalao":           "#E3DFE2",
+    "cielo":             "#90BAFA",
+    "botijo":            "#E3B584",
+    "tierra":            "#D46D34",
+    "teja":              "#87725D",
+    "vid":               "#769422",
+    "azul_rabilargo":    "#42557F",
+    "gris_rabilargo":    "#898C96",
+    "marron_rabilargo":  "#B98C75",
+    "negro_rabilargo":   "#0C0D12",
+    "beige_abejaruco":   "#ECE8CA",
+    "oro_abejaruco":     "#D3BB46",
+    "azul_abejaruco":    "#367A87",
+    "marron_abejaruco":  "#894A27",
+    "verde_abejaruco":   "#4C5C35",
+    "negro_abejaruco":   "#292929",
+    "marron_carbonero":  "#ACAD7D",
+    "oro_carbonero":     "#D1CC76",
+    "azul_carbonero":    "#8495B1",
+    "negro_carbonero":   "#0B0C07",
+    "gris_carbonero":    "#BFBEBC",
+    "beige_carraca":     "#E1D4C3",
+    "turquesa_carraca":  "#4BAFC0",
+    "azul_carraca":      "#2B5AD4",
+    "negro_carraca":     "#084258",
+    "marron_carraca":    "#974F27"
+  },
+  "palettes": {
+    "tradition": ["anil", "colorao", "forja", "encalao", "teja", "trigo"],
+    "landscape": ["cielo", "trigo", "tierra", "vid"],
+    "abejaruco": ["oro_abejaruco", "azul_abejaruco", "marron_abejaruco", "negro_abejaruco", "verde_abejaruco"],
+    "rabilargo": ["azul_rabilargo", "gris_rabilargo", "marron_rabilargo", "negro_rabilargo"],
+    "carbonero": ["oro_carbonero", "azul_carbonero", "negro_carbonero", "gris_carbonero", "marron_carbonero"],
+    "carraca": ["turquesa_carraca", "negro_carraca", "marron_carraca", "azul_carraca", "beige_carraca"]
+  },
+  "sequential": {
+    "cielo_anil":    ["#E3DFE2", "#90BAFA", "#274CCE"],
+    "trigo_tierra":  ["#F1C447", "#D46D34", "#87725D"],
+    "vid_bosque":    ["#ECE8CA", "#769422", "#4C5C35"]
+  },
+  "diverging": {
+    "colorao_anil":  ["#CC0300", "#E3DFE2", "#274CCE"],
+    "tierra_carraca":["#D46D34", "#E3DFE2", "#4BAFC0"]
+  }
+}

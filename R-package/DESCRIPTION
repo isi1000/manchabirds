@@ -1,0 +1,20 @@
+Package: iberianbirds
+Type: Package
+Title: Paletas de Colores Inspiradas en Aves Ibericas y La Mancha
+Version: 0.1.0
+Authors@R:
+    person("Isidro", "Sobrino", email = "isidrosobrino@gmail.com",
+           role = c("aut", "cre"))
+Description: Sistema de 11 paletas de colores (10 aves ibericas y el paisaje
+    manchego), cada una con hasta tres variantes: cualitativa (categorias),
+    secuencial (magnitud) y divergente (dato con centro). Colores extraidos y
+    afinados a partir de fotografias reales, con escalas listas para 'ggplot2'.
+    Pensado para figuras cohesivas y elegantes en articulos cientificos. Tiene
+    un paquete gemelo en Python con paridad exacta.
+Depends: R (>= 3.5.0)
+Imports: ggplot2, grDevices, graphics
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
