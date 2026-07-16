@@ -1,11 +1,11 @@
-"""Lamina maestra del sistema iberianbirds: 11 paletas x 3 tipos."""
+"""Lamina maestra del sistema manchabirds: 11 paletas x 3 tipos."""
 import matplotlib; matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
 from matplotlib.colors import LinearSegmentedColormap
 import numpy as np
-import iberianbirds as ib
-from iberianbirds import CUALITATIVA, SECUENCIAL, DIVERGENTE
+import manchabirds as ib
+from manchabirds import CUALITATIVA, SECUENCIAL, DIVERGENTE
 
 orden = list(CUALITATIVA)
 grad = np.linspace(0, 1, 128).reshape(1, -1)
@@ -37,9 +37,9 @@ for x, t in [(3.5, 'CUALITATIVA  ·  categorias'),
              (15.15, 'DIVERGENTE  ·  _div')]:
     ax.text(x, len(orden) + 0.75, t, ha='center', fontsize=12.5, weight='bold', color='#333')
 ax.set_xlim(-2.9, 17.6); ax.set_ylim(0, len(orden) + 1.3); ax.axis('off')
-ax.set_title('iberianbirds  —  sistema completo de paletas (10 aves + paisaje manchego)',
+ax.set_title('manchabirds  —  sistema completo de paletas (10 aves + paisaje manchego)',
              fontsize=17, weight='bold', loc='left', y=1.01)
 fig.text(0.5, 0.005, 'Colores extraidos y afinados de fotografias reales  ·  paridad R / Python  ·  cernicalo solo cualitativa+secuencial',
          ha='center', fontsize=9, color='#666')
-fig.savefig('shared/iberianbirds-sistema-completo.png', dpi=150, bbox_inches='tight')
+fig.savefig('shared/manchabirds-sistema-completo.png', dpi=150, bbox_inches='tight')
 print('ok ->', len(orden), 'paletas')

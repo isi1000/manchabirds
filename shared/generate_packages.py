@@ -21,7 +21,7 @@ def py_dict(d):
         lines.append(f'    "{k}": [{cols}],')
     return '\n'.join(lines)
 
-py = f'''"""Datos de las paletas iberianbirds (generado desde sistema-final.json).
+py = f'''"""Datos de las paletas manchabirds (generado desde sistema-final.json).
 
 NO editar a mano: se regenera con shared/generate_packages.py.
 Paridad exacta con el paquete de R.
@@ -42,7 +42,7 @@ DIVERGENTE = {{
 {py_dict(div)}
 }}
 '''
-open(os.path.join(BASE, 'py-package', 'src', 'iberianbirds', '_data.py'), 'w', encoding='utf-8').write(py)
+open(os.path.join(BASE, 'py-package', 'src', 'manchabirds', '_data.py'), 'w', encoding='utf-8').write(py)
 
 # ---------------- R ----------------
 def r_list(d):
@@ -53,19 +53,19 @@ def r_list(d):
     s = '\n'.join(lines)
     return s[:-1] if s.endswith(',') else s   # quita ultima coma
 
-r = f'''# Datos de las paletas iberianbirds (generado desde sistema-final.json).
+r = f'''# Datos de las paletas manchabirds (generado desde sistema-final.json).
 # NO editar a mano: se regenera con shared/generate_packages.py.
 # Paridad exacta con el paquete de Python.
 
-.ib_cualitativa <- list(
+.mb_cualitativa <- list(
 {r_list(qual)}
 )
 
-.ib_secuencial <- list(
+.mb_secuencial <- list(
 {r_list(seq)}
 )
 
-.ib_divergente <- list(
+.mb_divergente <- list(
 {r_list(div)}
 )
 '''
@@ -74,6 +74,6 @@ with open(os.path.join(BASE, 'R-package', 'R', 'paletas-datos.R'), 'w', encoding
     f.write(r)
 
 print('Generado:')
-print(' - py-package/src/iberianbirds/_data.py')
+print(' - py-package/src/manchabirds/_data.py')
 print(' - R-package/R/paletas-datos.R')
 print(f'Paletas: {len(qual)} cualitativas, {len(seq)} secuenciales, {len(div)} divergentes')

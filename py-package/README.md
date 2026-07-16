@@ -1,4 +1,4 @@
-# iberianbirds (Python)
+# manchabirds (Python)
 
 Paletas inspiradas en aves ibéricas y La Mancha para **matplotlib** y
 **seaborn**. Paquete gemelo del de R, con paridad exacta de colores.
@@ -13,13 +13,13 @@ pip install ./py-package
 
 | Función | Qué hace |
 |---|---|
-| `ib.paletas()` | Nombres de todas las paletas por tipo |
-| `ib.paleta("manchego", n=None, reverse=False)` | Lista de hex de una paleta |
-| `ib.cmap("abejaruco_seq")` | `LinearSegmentedColormap` continuo |
-| `ib.listed_cmap("manchego")` | `ListedColormap` discreto |
-| `ib.registrar_cmaps()` | Registra `iberianbirds_*` en matplotlib |
-| `ib.usar_paleta("avefria")` | Fija el ciclo de color por defecto |
-| `ib.mostrar_paleta("flamenco_div")` | Dibuja la paleta |
+| `mb.paletas()` | Nombres de todas las paletas por tipo |
+| `mb.paleta("manchego", n=None, reverse=False)` | Lista de hex de una paleta |
+| `mb.cmap("abejaruco_seq")` | `LinearSegmentedColormap` continuo |
+| `mb.listed_cmap("manchego")` | `ListedColormap` discreto |
+| `mb.registrar_cmaps()` | Registra `manchabirds_*` en matplotlib |
+| `mb.usar_paleta("avefria")` | Fija el ciclo de color por defecto |
+| `mb.mostrar_paleta("flamenco_div")` | Dibuja la paleta |
 
 ## Nomenclatura
 
@@ -31,9 +31,9 @@ pip install ./py-package
 
 ```python
 import matplotlib.pyplot as plt
-import iberianbirds as ib
+import manchabirds as mb
 
-ib.usar_paleta("manchego")
+mb.usar_paleta("manchego")
 plt.bar(list("ABCD"), [4, 7, 3, 8])
 plt.show()
 ```
@@ -41,6 +41,6 @@ plt.show()
 Más ejemplos en [`examples/demo.py`](examples/demo.py) (cualitativa, secuencial
 y divergente).
 
-> Los datos viven en `src/iberianbirds/_data.py` (generado desde
+> Los datos viven en `src/manchabirds/_data.py` (generado desde
 > `../shared/sistema-final.json`). Regenera con
 > `python ../shared/generate_packages.py`.

@@ -1,4 +1,4 @@
-"""iberianbirds: paletas de colores inspiradas en aves ibericas y La Mancha.
+"""manchabirds: paletas de colores inspiradas en aves ibericas y La Mancha.
 
 Sistema de 11 paletas (10 aves + el paisaje manchego), cada una con hasta
 3 variantes:
@@ -10,12 +10,12 @@ Paridad exacta con el paquete de R del mismo nombre.
 
 Uso rapido
 ----------
->>> import iberianbirds as ib
->>> ib.paleta("manchego")             # lista de hex (cualitativa)
->>> ib.paleta("abejaruco_seq", n=9)   # degradado interpolado a 9
->>> cm = ib.cmap("martin_div")        # colormap divergente de matplotlib
->>> ib.usar_paleta("avefria")         # fija el ciclo de color por defecto
->>> ib.registrar_cmaps()              # registra "iberianbirds_*" en matplotlib
+>>> import manchabirds as mb
+>>> mb.paleta("manchego")             # lista de hex (cualitativa)
+>>> mb.paleta("abejaruco_seq", n=9)   # degradado interpolado a 9
+>>> cm = mb.cmap("martin_div")        # colormap divergente de matplotlib
+>>> mb.usar_paleta("avefria")         # fija el ciclo de color por defecto
+>>> mb.registrar_cmaps()              # registra "manchabirds_*" en matplotlib
 """
 from __future__ import annotations
 from typing import List, Optional, Tuple, Dict
@@ -44,7 +44,7 @@ def _stops(nombre: str) -> Tuple[str, List[str]]:
     tipo, tabla, base = _resolver(nombre)
     if base not in tabla:
         raise KeyError(
-            f"Paleta desconocida: {nombre!r}. Ver iberianbirds.paletas()."
+            f"Paleta desconocida: {nombre!r}. Ver manchabirds.paletas()."
         )
     return tipo, list(tabla[base])
 
@@ -123,19 +123,19 @@ def cmap(nombre: str = "manchego_seq", n: int = 256, reverse: bool = False):
     tipo, stops = _stops(nombre)
     if reverse:
         stops = list(reversed(stops))
-    return LinearSegmentedColormap.from_list(f"iberianbirds_{nombre}", stops, N=n)
+    return LinearSegmentedColormap.from_list(f"manchabirds_{nombre}", stops, N=n)
 
 
 def listed_cmap(nombre: str = "manchego", reverse: bool = False):
     """``ListedColormap`` discreto de una paleta cualitativa."""
     from matplotlib.colors import ListedColormap
-    return ListedColormap(paleta(nombre, reverse=reverse), name=f"iberianbirds_{nombre}")
+    return ListedColormap(paleta(nombre, reverse=reverse), name=f"manchabirds_{nombre}")
 
 
 def registrar_cmaps() -> List[str]:
     """Registra los degradados (secuenciales y divergentes) en matplotlib.
 
-    Quedan accesibles por nombre, p. ej. ``cmap="iberianbirds_martin_div"``.
+    Quedan accesibles por nombre, p. ej. ``cmap="manchabirds_martin_div"``.
     Devuelve la lista de nombres registrados.
     """
     import matplotlib
@@ -182,7 +182,7 @@ def mostrar_paleta(nombre: str = "manchego", n: Optional[int] = None, ax=None):
         ax.add_patch(plt.Rectangle((i, 0), 1, 1, color=c))
     ax.set_xlim(0, len(cols)); ax.set_ylim(0, 1)
     ax.set_xticks([]); ax.set_yticks([])
-    ax.set_title(f"iberianbirds: {nombre}")
+    ax.set_title(f"manchabirds: {nombre}")
     if creado:
         plt.tight_layout()
     return ax

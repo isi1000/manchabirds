@@ -1,8 +1,8 @@
-# Datos de las paletas iberianbirds (generado desde sistema-final.json).
+# Datos de las paletas manchabirds (generado desde sistema-final.json).
 # NO editar a mano: se regenera con shared/generate_packages.py.
 # Paridad exacta con el paquete de Python.
 
-.ib_cualitativa <- list(
+.mb_cualitativa <- list(
   avutarda = c("#B4B8BB", "#F1E7D5", "#C8842A", "#A5522A", "#241206"),
   flamenco = c("#F3D3D6", "#F14E33", "#D6437B", "#6BAAC9", "#191920"),
   focha = c("#B81A1A", "#ECE7DC", "#6F7883", "#1A1A1D", "#B9C0C7"),
@@ -17,7 +17,7 @@
   manchego = c("#3150B5", "#E7E1D6", "#C0362B", "#3C4650", "#8FB8E0", "#E8C24A", "#C96A38", "#7E8E3C")
 )
 
-.ib_secuencial <- list(
+.mb_secuencial <- list(
   avutarda = c("#FBF5EB", "#A5522A", "#5E2E14"),
   flamenco = c("#FDEFF3", "#E894BA", "#D6437B", "#B83063"),
   focha = c("#ECE7DC", "#1A1A1D"),
@@ -32,7 +32,7 @@
   manchego = c("#EFEAE0", "#8FB8E0", "#3150B5", "#1B2C6A")
 )
 
-.ib_divergente <- list(
+.mb_divergente <- list(
   avutarda = c("#A5522A", "#F4ECDD", "#5A6064"),
   flamenco = c("#F14E33", "#F4ECEA", "#9FB4C4"),
   focha = c("#B81A1A", "#ECE7DC", "#1A1A1D"),

@@ -1,6 +1,6 @@
 ![](shared/martin_example.png)
 
-# iberianbirds
+# manchabirds
 
 Color palettes I made from photos of Iberian birds (and the odd La Mancha
 landscape) so my figures would stop clashing with each other. Same colors in R
@@ -29,44 +29,60 @@ pip install "git+https://github.com/isi1000/manchabirds.git#subdirectory=py-pack
 **R**
 ```r
 library(ggplot2)
-library(iberianbirds)
+library(manchabirds)
 
 ggplot(iris, aes(Sepal.Length, Petal.Length, color = Species)) +
   geom_point() +
-  scale_color_iberianbirds("martin")
+  scale_color_manchabirds("martin")
 
-ib_paletas()   # see them all
+mb_paletas()   # see them all
 ```
 
 **Python**
 ```python
-import iberianbirds as ib
+import manchabirds as mb
 
-ib.usar_paleta("martin")          # set as the default cycle
-ib.registrar_cmaps()              # gradients as "iberianbirds_*"
-ib.paleta("abejaruco_seq", n = 9) # just the hex codes
+mb.usar_paleta("martin")          # set as the default cycle
+mb.registrar_cmaps()              # gradients as "manchabirds_*"
+mb.paleta("abejaruco_seq", n = 9) # just the hex codes
 ```
 
 My favorite for scientific work is `martin` (kingfisher) — orange and blue, plays
 nice, colorblind-friendly. But use whichever bird you like.
 
+MIT license, do what you want with it.
+
 ---
 
-## The palettes
+## The palettes, in action
 
-![](shared/iberianbirds-sistema-completo.png)
+Every one of them run through the same set of plots (a small immunogenicity
+modeling project): dose kinetics, ROC curves, feature importance, an MHC-II
+heatmap, a correlation matrix and predicted-probability violins.
 
-| id | bird / theme |
-|---|---|
-| `avutarda` | great bustard |
-| `flamenco` | flamingo |
-| `focha` | red-knobbed coot |
-| `abejaruco` | bee-eater |
-| `rabilargo` | Iberian magpie |
-| `cernicalo` | lesser kestrel |
-| `jilguero` | goldfinch |
-| `martin` | kingfisher |
-| `herrerillo` | blue tit |
-| `avefria` | lapwing |
-| `camachuelo` | bullfinch |
-| `manchego` | the La Mancha countryside |
+<table>
+<tr>
+<td align="center"><b>avutarda</b> · great bustard<br><img src="shared/inmuno/avutarda.png" width="100%"></td>
+<td align="center"><b>flamenco</b> · flamingo<br><img src="shared/inmuno/flamenco.png" width="100%"></td>
+</tr>
+<tr>
+<td align="center"><b>focha</b> · red-knobbed coot<br><img src="shared/inmuno/focha.png" width="100%"></td>
+<td align="center"><b>abejaruco</b> · bee-eater<br><img src="shared/inmuno/abejaruco.png" width="100%"></td>
+</tr>
+<tr>
+<td align="center"><b>rabilargo</b> · Iberian magpie<br><img src="shared/inmuno/rabilargo.png" width="100%"></td>
+<td align="center"><b>cernicalo</b> · lesser kestrel<br><img src="shared/inmuno/cernicalo.png" width="100%"></td>
+</tr>
+<tr>
+<td align="center"><b>jilguero</b> · goldfinch<br><img src="shared/inmuno/jilguero.png" width="100%"></td>
+<td align="center"><b>martin</b> · kingfisher<br><img src="shared/inmuno/martin.png" width="100%"></td>
+</tr>
+<tr>
+<td align="center"><b>herrerillo</b> · blue tit<br><img src="shared/inmuno/herrerillo.png" width="100%"></td>
+<td align="center"><b>avefria</b> · lapwing<br><img src="shared/inmuno/avefria.png" width="100%"></td>
+</tr>
+<tr>
+<td align="center"><b>camachuelo</b> · bullfinch<br><img src="shared/inmuno/camachuelo.png" width="100%"></td>
+<td align="center"><b>manchego</b> · the La Mancha countryside<br><img src="shared/inmuno/manchego.png" width="100%"></td>
+</tr>
+</table>

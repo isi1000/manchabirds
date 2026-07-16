@@ -1,4 +1,4 @@
-"""Datos de las paletas iberianbirds (generado desde sistema-final.json).
+"""Datos de las paletas manchabirds (generado desde sistema-final.json).
 
 NO editar a mano: se regenera con shared/generate_packages.py.
 Paridad exacta con el paquete de R.

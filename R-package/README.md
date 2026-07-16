@@ -1,4 +1,4 @@
-# iberianbirds (R)
+# manchabirds (R)
 
 Paletas inspiradas en aves ibéricas y La Mancha para **ggplot2**. Paquete
 gemelo del de Python, con paridad exacta de colores.
@@ -14,13 +14,13 @@ remotes::install_local("R-package")
 
 | Función | Qué hace |
 |---|---|
-| `ib_paletas()` | Nombres de todas las paletas por tipo |
-| `ib_paleta("manchego", n, reverse)` | Vector de hex de una paleta |
-| `scale_color_iberianbirds("abejaruco")` | Escala discreta (color) |
-| `scale_fill_iberianbirds("abejaruco")` | Escala discreta (relleno) |
-| `scale_color_iberianbirds_c("abejaruco_seq")` | Escala continua (color) |
-| `scale_fill_iberianbirds_c("martin_div")` | Escala continua (relleno) |
-| `ib_mostrar("avefria")` | Dibuja la paleta |
+| `mb_paletas()` | Nombres de todas las paletas por tipo |
+| `mb_paleta("manchego", n, reverse)` | Vector de hex de una paleta |
+| `scale_color_manchabirds("abejaruco")` | Escala discreta (color) |
+| `scale_fill_manchabirds("abejaruco")` | Escala discreta (relleno) |
+| `scale_color_manchabirds_c("abejaruco_seq")` | Escala continua (color) |
+| `scale_fill_manchabirds_c("martin_div")` | Escala continua (relleno) |
+| `mb_mostrar("avefria")` | Dibuja la paleta |
 
 ## Nomenclatura
 
@@ -31,10 +31,10 @@ remotes::install_local("R-package")
 ## Ejemplo
 
 ```r
-library(ggplot2); library(iberianbirds)
+library(ggplot2); library(manchabirds)
 ggplot(iris, aes(Sepal.Length, Petal.Length, color = Species)) +
   geom_point(size = 3) +
-  scale_color_iberianbirds("abejaruco") +
+  scale_color_manchabirds("abejaruco") +
   theme_minimal()
 ```
 
