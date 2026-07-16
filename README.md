@@ -1,16 +1,17 @@
-![](shared/abejaruco_example.png)
 
 # manchabirds
 
-Color palettes I made from photos of Iberian birds (and the odd La Mancha
-landscape) so my figures would stop clashing with each other. Same colors in R
-and Python, pick your poison.
+Colour palettes for ggplot2 and Matplotlib inspired by birds commonly found in La Mancha + typical landscape colours from the place!!. Same colors in R
+and Python.
 
 Most of them come in three flavors:
 
 - plain name → categories (`martin`)
 - `_seq` → a gradient (`martin_seq`)
 - `_div` → diverging, for data centered on zero like correlations (`martin_div`)
+## Example
+
+![](shared/abejaruco_example.png)
 
 ## Install
 
