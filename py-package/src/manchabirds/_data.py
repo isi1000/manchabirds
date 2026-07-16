@@ -9,7 +9,7 @@ CUALITATIVA = {
     "avutarda": ["#B4B8BB", "#F1E7D5", "#C8842A", "#A5522A", "#241206"],
     "flamenco": ["#F3D3D6", "#F14E33", "#D6437B", "#6BAAC9", "#191920"],
     "focha": ["#B81A1A", "#ECE7DC", "#6F7883", "#1A1A1D", "#B9C0C7"],
-    "abejaruco": ["#99D3DB", "#F8E463", "#D29B57", "#6C9661", "#3B4049", "#F1E9D4"],
+    "abejaruco": ["#99D3DB", "#F8E463", "#C4783E", "#6C9661", "#3B4049", "#F1E9D4"],
     "rabilargo": ["#2B91AE", "#E1B170", "#AFCDCA", "#3B3C36"],
     "cernicalo": ["#A5A9B2", "#A17971", "#F5D52F", "#E2C2A6", "#443F48"],
     "jilguero": ["#D64135", "#1F1D23", "#FEF355", "#CE9B7B", "#E2D7D5"],
