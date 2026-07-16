@@ -1,4 +1,4 @@
-![](shared/martin_example.png)
+![](shared/abejaruco_example.png)
 
 # manchabirds
 
