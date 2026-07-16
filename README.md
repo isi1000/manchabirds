@@ -54,35 +54,40 @@ MIT license, do what you want with it.
 
 ---
 
-## The palettes, in action
+## The palettes
 
-Every one of them run through the same set of plots (a small immunogenicity
-modeling project): dose kinetics, ROC curves, feature importance, an MHC-II
-heatmap, a correlation matrix and predicted-probability violins.
+**avutarda** · great bustard
+![](shared/circulos/avutarda.png)
 
-<table>
-<tr>
-<td align="center"><b>avutarda</b> · great bustard<br><img src="shared/inmuno/avutarda.png" width="100%"></td>
-<td align="center"><b>flamenco</b> · flamingo<br><img src="shared/inmuno/flamenco.png" width="100%"></td>
-</tr>
-<tr>
-<td align="center"><b>focha</b> · red-knobbed coot<br><img src="shared/inmuno/focha.png" width="100%"></td>
-<td align="center"><b>abejaruco</b> · bee-eater<br><img src="shared/inmuno/abejaruco.png" width="100%"></td>
-</tr>
-<tr>
-<td align="center"><b>rabilargo</b> · Iberian magpie<br><img src="shared/inmuno/rabilargo.png" width="100%"></td>
-<td align="center"><b>cernicalo</b> · lesser kestrel<br><img src="shared/inmuno/cernicalo.png" width="100%"></td>
-</tr>
-<tr>
-<td align="center"><b>jilguero</b> · goldfinch<br><img src="shared/inmuno/jilguero.png" width="100%"></td>
-<td align="center"><b>martin</b> · kingfisher<br><img src="shared/inmuno/martin.png" width="100%"></td>
-</tr>
-<tr>
-<td align="center"><b>herrerillo</b> · blue tit<br><img src="shared/inmuno/herrerillo.png" width="100%"></td>
-<td align="center"><b>avefria</b> · lapwing<br><img src="shared/inmuno/avefria.png" width="100%"></td>
-</tr>
-<tr>
-<td align="center"><b>camachuelo</b> · bullfinch<br><img src="shared/inmuno/camachuelo.png" width="100%"></td>
-<td align="center"><b>manchego</b> · the La Mancha countryside<br><img src="shared/inmuno/manchego.png" width="100%"></td>
-</tr>
-</table>
+**flamenco** · flamingo
+![](shared/circulos/flamenco.png)
+
+**focha** · red-knobbed coot
+![](shared/circulos/focha.png)
+
+**abejaruco** · bee-eater
+![](shared/circulos/abejaruco.png)
+
+**rabilargo** · Iberian magpie
+![](shared/circulos/rabilargo.png)
+
+**cernicalo** · lesser kestrel
+![](shared/circulos/cernicalo.png)
+
+**jilguero** · goldfinch
+![](shared/circulos/jilguero.png)
+
+**martin** · kingfisher
+![](shared/circulos/martin.png)
+
+**herrerillo** · blue tit
+![](shared/circulos/herrerillo.png)
+
+**avefria** · lapwing
+![](shared/circulos/avefria.png)
+
+**camachuelo** · bullfinch
+![](shared/circulos/camachuelo.png)
+
+**manchego** · the La Mancha countryside
+![](shared/circulos/manchego.png)
