@@ -23,7 +23,7 @@ CUALITATIVA = {
 # Paletas SECUENCIALES (magnitud creciente): puntos de un degradado claro->oscuro.
 SECUENCIAL = {
     "avutarda": ["#FBF5EB", "#A5522A", "#5E2E14"],
-    "flamenco": ["#FEF4F0", "#F14E33", "#7A1F10"],
+    "flamenco": ["#FDEFF3", "#E894BA", "#D6437B", "#B83063"],
     "focha": ["#ECE7DC", "#1A1A1D"],
     "abejaruco": ["#F4FBFC", "#99D3DB", "#3F9BB2", "#154E62"],
     "rabilargo": ["#EAF1EF", "#AFCDCA", "#2B91AE", "#1F3D48"],

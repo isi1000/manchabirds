@@ -19,7 +19,7 @@
 
 .ib_secuencial <- list(
   avutarda = c("#FBF5EB", "#A5522A", "#5E2E14"),
-  flamenco = c("#FEF4F0", "#F14E33", "#7A1F10"),
+  flamenco = c("#FDEFF3", "#E894BA", "#D6437B", "#B83063"),
   focha = c("#ECE7DC", "#1A1A1D"),
   abejaruco = c("#F4FBFC", "#99D3DB", "#3F9BB2", "#154E62"),
   rabilargo = c("#EAF1EF", "#AFCDCA", "#2B91AE", "#1F3D48"),
